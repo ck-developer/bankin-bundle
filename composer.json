@@ -1,0 +1,31 @@
+{
+    "name": "ck-developer/bankin-bundle",
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../../../bankin-sdk-php"
+        }
+    ],
+    "require": {
+        "symfony/framework-bundle": "^4.3",
+        "ck-developer/bankin-sdk-php": "1.0.x-dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bankin\\Bundle\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Bankin\\Bundle\\Tests\\": "tests"
+        }
+    },
+    "require-dev": {
+        "symfony/phpunit-bridge": "^4.3"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
